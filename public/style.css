@@ -1,0 +1,38 @@
+body {
+  background-color: #ffffcc;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 24px;
+}
+
+nav {
+  font-size: 24px;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+em {
+  font-style: normal;
+  color: red;
+}
