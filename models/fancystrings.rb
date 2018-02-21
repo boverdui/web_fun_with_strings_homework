@@ -19,7 +19,7 @@ class FancyString
     return "'#{string}' isn't an isogram"
   end
 
-  def FancyString.anagram (string1, string2)
+  def FancyString.anagram(string1, string2)
     string1.downcase!()
     string2.downcase!()
     return "'#{string1}' and '#{string2}' are anagrams" if string1.chars.sort() == string2.chars.sort()
