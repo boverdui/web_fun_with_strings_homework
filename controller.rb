@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'sinatra/contrib/all'
-require_relative './models/fancystrings.rb'
+require_relative './models/functions.rb'
 
 
 get '/' do
@@ -12,21 +12,21 @@ get '/instructions' do
 end
 
 get '/equal/:string1/:string2' do
-  @result = FancyString.equal(params[:string1], params[:string2])
+  @result = equal(params[:string1], params[:string2])
   erb(:result)
 end
 
 get '/palindrome/:string' do
-  @result = FancyString.palindrome(params[:string])
+  @result = palindrome(params[:string])
   erb(:result)
 end
 
 get '/isogram/:string' do
-  @result = FancyString.isogram(params[:string])
+  @result = isogram(params[:string])
   erb(:result)
 end
 
 get '/anagram/:string1/:string2' do
-  @result = FancyString.anagram(params[:string1], params[:string2])
+  @result = anagram(params[:string1], params[:string2])
   erb(:result)
 end
